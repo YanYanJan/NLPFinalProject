@@ -208,7 +208,11 @@ def generate_haiku(model_2, model_3):
     ))
 
 # generate haikus using the first six txt file as corpus
-generate_haiku(model_2_path1,model_3_path1)
+print("These are the haikus generated using models created by files in corpus ")
+for i in range(8):
+    generate_haiku(model_2_path1,model_3_path1)
 # generate haikus using the next six txt file as corpus
-generate_haiku(model_2_path2,model_3_path2)
+print("These are the haikus generated using models created by files in corpus2 ")
+for j in range(8):
+    generate_haiku(model_2_path2,model_3_path2)
 
